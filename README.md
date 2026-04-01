@@ -1,4 +1,8 @@
 # Top2Vec-Topic-Model
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c5745603-e221-4709-8963-83c4ccaeb7f5" width="500"/>
+</p>
+
 ## Coursera Topic Modeling with Top2Vec
 
 This repository contains a notebook that applies the Top2Vec algorithm to perform topic modelling on Coursera programme module summaries. The goal is to automatically discover coherent topics from a large collection of course descriptions, enabling curriculum designers and learners to quickly understand the thematic structure of hundreds of programmes. 
@@ -39,9 +43,18 @@ The preprocessing steps involve the following:
 - Train Top2Vec model – instantiate a Top2Vec model on the list of documents using the default Doc2Vec embedding. We set hdbscan_args={'min_cluster_size': 40} and use workers=15 to speed up training:
 - Save the trained model
 - Inspect topics – after training, we use model.get_topics() to return the topic words, their scores and the topic indices. We print the top 10 words for each topic and compute the number of topics detected.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6ec7aab7-5ae8-4abe-9a30-76b193dee73f" width="550"/>
+</p>
+<p align="center"><i>Figure 1: C_v Coherence Score Formula for Topic Modelling</i></p>
 - Coherence scoring – to evaluate topic quality, we compute the c_v coherence score using gensim’s CoherenceModel. We tokenise the documents, build a dictionary and pass the top words per topic. A higher coherence score indicates more semantically consistent topics.
 
+
+
 ## Visualisation and Exploration
+<img width="1003" height="537" alt="image" src="https://github.com/user-attachments/assets/31d87638-e02f-4e3b-b7b4-8ccc3c9ff7cf" />
+<p align="center"><i>Figure 2: Word Cloud of Topic 0 generated using Top2Vec</i></p>
+
 To gain insight into the learned topics, the notebook projects the high‑dimensional topic vectors into two dimensions using UMAP. Each topic is labelled with its top three keywords and plotted in a scatter plot. Clusters that are closer in 2D space represent semantically similar themes. We also generate word clouds for individual topics to visually explore the distribution of keywords.
 
 ## Results and Discussion
