@@ -1,5 +1,5 @@
-## Top2Vec-Topic-Model
-# Coursera Topic Modeling with Top2Vec
+# Top2Vec-Topic-Model
+## Coursera Topic Modeling with Top2Vec
 
 This repository contains a notebook that applies the Top2Vec algorithm to perform topic modelling on Coursera programme module summaries. The goal is to automatically discover coherent topics from a large collection of course descriptions, enabling curriculum designers and learners to quickly understand the thematic structure of hundreds of programmes. 
 
