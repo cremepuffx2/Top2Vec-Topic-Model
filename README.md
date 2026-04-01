@@ -47,7 +47,7 @@ The preprocessing steps involve the following:
   <img src="https://github.com/user-attachments/assets/6ec7aab7-5ae8-4abe-9a30-76b193dee73f" width="550"/>
 </p>
 <p align="center"><i>Figure 1: C_v Coherence Score Formula for Topic Modelling</i></p>
-- Coherence scoring – to evaluate topic quality, we compute the c_v coherence score using gensim’s CoherenceModel. We tokenise the documents, build a dictionary and pass the top words per topic. A higher coherence score indicates more semantically consistent topics.
+Coherence scoring – to evaluate topic quality, we compute the c_v coherence score using gensim’s CoherenceModel. We tokenise the documents, build a dictionary and pass the top words per topic. A higher coherence score indicates more semantically consistent topics.
 
 
 
